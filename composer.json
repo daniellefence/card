@@ -1,0 +1,53 @@
+{
+    "name": "daniellefence/card",
+    "version": "1.0.3.1",
+    "description": "Card for laravel",
+    "keywords": [
+        "daniellefence",
+        "card"
+    ],
+    "homepage": "https://github.com/daniellefence/card",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Shane Barron",
+            "email": "sbarron@daniellefence.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Daniellefence\\Card\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Daniellefence\\Card\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Daniellefence\\Card\\CardServiceProvider"
+            ],
+            "aliases": {
+                "Card": "Daniellefence\\Card\\CardFacade"
+            }
+        }
+    }
+}
